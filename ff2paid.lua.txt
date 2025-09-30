@@ -95,6 +95,9 @@ local fps = 0
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/coast%20old"))()
 local UI = Lib:Create()
 
+return Window
+end
+
 local configSavingUI = game:GetObjects("rbxassetid://18187656247")[1]:Clone()
 configSavingUI.Parent = (gethui and gethui()) or game:GetService("CoreGui")
 configSavingUI.Enabled = false
@@ -2376,4 +2379,5 @@ local Load = Configs:CreateModule("Load", true, function()
 	
 	UI:Import(contents)
 end)
+
 
